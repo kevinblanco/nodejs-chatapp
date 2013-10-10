@@ -12,7 +12,7 @@ Sourcecode of the backend for the chatapp using NodeJS, Socket.io and Express. T
 ---
 
 	register
-###### Register on the chat list, it receives a username and `emit` an Object with the list of all users registered on the chat room. ######
+###### Register on the chat list, it should receive an username. `emit` an Object with the list of all users registered on the chat room. ######
 
 ---
 
