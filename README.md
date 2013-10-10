@@ -1,6 +1,6 @@
 # NodeJS Backend for a Chat App with Socket.io #
 
-Sourcecode of the backend for the chatapp using NodeJS, Socket.io and Express. The front-end is on a separate repositoty using AngularJS.
+Sourcecode of the backend for a ChatApp using NodeJS, Socket.io and Express. The front-end is on a separate repository using AngularJS.
 
 ## Sockets ##
 
