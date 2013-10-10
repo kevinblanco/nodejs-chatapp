@@ -29,5 +29,8 @@ Sourcecode of the backend for the chatapp using NodeJS, Socket.io and Express. T
 	list
 ###### `emit` an Object with all the users registered on the chat room  ######
 
+---
 
+### Note ###
 
+This app is hosted at Nodejistu, so the implementation is according the Jitsu guideliness. To host this app on another service (such as Heroku) you might need to change a bit the code to work properly. Heroku does not support websockets natively so read the docummentation depending on the service you are using.
