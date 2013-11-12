@@ -5,33 +5,22 @@
  */
 
 
-/**
- * Variables and Modules declaration
- */
-var express = require("express"),
-    app     = express(),
-    httpS   = require('http').createServer(),
-    socket  = require('socket.io'),
-    port    = process.env.PORT || 3000,
-    server  = app.listen(port);
-
-app.use(express.logger());
+var express = require('express')
+    ,fs     = require('fs')
+    ,socket = require('socket.io');
 
 
-app.get('/', function(request, response) {
-    response.send('NodeJS Server Running');
-});
+var app = express()
 
+// Start the app by listening on <port>
+var port = process.env.PORT || 3000,
+    server = app.listen(port);
 
-/**
- * Socket.io Configuration
- */
+//Setting up socket.io
 var io = socket.listen(server);
 require('./sockets.js')(io);
 
+console.log('OK! We are running at '+ port);
 
-app.listen(port, function() {
-    console.log("Listening on " + port);
-});
-
+// expose app
 exports = module.exports = app
